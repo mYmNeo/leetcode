@@ -1,5 +1,4 @@
-#include <iostream>
-#include <stack>
+#include "../config.h"
 
 class MinStack
 {
@@ -36,3 +35,4 @@ private:
     std::stack<int> _data;
     std::stack<int> _min;
 };
+

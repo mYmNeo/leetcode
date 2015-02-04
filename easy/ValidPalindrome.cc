@@ -1,5 +1,4 @@
-#include <iostream>
-#include <string>
+#include "../config.h"
 
 class Solution
 {

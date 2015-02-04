@@ -1,10 +1,4 @@
-#include <iostream>
-#include <cstdio>
-#include <cstdlib>
-#include <vector>
-#include <algorithm>
-#include <cmath>
-
+#include "../config.h"
 
 class Solution
 {
