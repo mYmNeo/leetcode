@@ -12,6 +12,7 @@
 #include <algorithm>
 #include <cmath>
 #include <iterator>
+#include <utility>
 
 struct ListNode
 {
@@ -33,5 +34,12 @@ struct UndirectedGraphNode
     int label;
     std::vector<UndirectedGraphNode *> neighbors;
     UndirectedGraphNode(int x) : label(x) {}
+};
+
+struct TreeLinkNode
+{
+    TreeLinkNode *left;
+    TreeLinkNode *right;
+    TreeLinkNode *next;
 };
 

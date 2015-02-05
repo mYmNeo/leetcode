@@ -1,8 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <cstdio>
-#include <queue>
-
+#include "../config.h"
 
 class Solution
 {
