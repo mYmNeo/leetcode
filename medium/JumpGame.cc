@@ -11,7 +11,7 @@ public:
             max_reach = std::max(i + A[i], max_reach);
         }
 
-        return max_reach >= n;
+        return max_reach >= n - 1;
     }
 };
 
