@@ -15,32 +15,27 @@
 #include <utility>
 #include <sstream>
 
-struct ListNode
-{
-    int val;
-    ListNode *next;
-    ListNode(int x) : val(x), next(NULL) {}
+struct ListNode {
+  int val;
+  ListNode *next;
+  ListNode(int x) : val(x), next(NULL) {}
 };
 
-struct TreeNode
-{
-    int val;
-    TreeNode *left;
-    TreeNode *right;
-    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+struct TreeNode {
+  int val;
+  TreeNode *left;
+  TreeNode *right;
+  TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
-struct UndirectedGraphNode
-{
-    int label;
-    std::vector<UndirectedGraphNode *> neighbors;
-    UndirectedGraphNode(int x) : label(x) {}
+struct UndirectedGraphNode {
+  int label;
+  std::vector<UndirectedGraphNode *> neighbors;
+  UndirectedGraphNode(int x) : label(x) {}
 };
 
-struct TreeLinkNode
-{
-    TreeLinkNode *left;
-    TreeLinkNode *right;
-    TreeLinkNode *next;
+struct TreeLinkNode {
+  TreeLinkNode *left;
+  TreeLinkNode *right;
+  TreeLinkNode *next;
 };
-

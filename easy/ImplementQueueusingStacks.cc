@@ -1,58 +1,49 @@
 #include "../config.h"
 
-class Queue
-{
-  public:
-    Queue()
-    {
-      size = 0;
-    }
-    void push(int x)
-    {
-      ++size;
-      frame.push(x);
-    }
+class Queue {
+ public:
+  Queue() { size = 0; }
+  void push(int x) {
+    ++size;
+    frame.push(x);
+  }
 
-    void pop(void)
-    {
-      std::stack<int> tmp;
-      int num = size - 1;
-      while (num--) {
-        tmp.push(frame.top());
-        frame.pop();
-      }
-
-      while (!tmp.empty()) {
-        frame.push(tmp.top());
-        tmp.pop();
-      }
-      --size;
+  void pop(void) {
+    std::stack<int> tmp;
+    int num = size - 1;
+    while (num--) {
+      tmp.push(frame.top());
+      frame.pop();
     }
 
-    int peek(void)
-    {
-      std::stack<int> tmp;
-      int num = size - 1;
-      while (num--) {
-        tmp.push(frame.top());
-        frame.pop();
-      }
+    while (!tmp.empty()) {
+      frame.push(tmp.top());
+      tmp.pop();
+    }
+    --size;
+  }
 
-      int ret = frame.top();
-
-      while (!tmp.empty()) {
-        frame.push(tmp.top());
-        tmp.pop();
-      }
-
-      return ret;
+  int peek(void) {
+    std::stack<int> tmp;
+    int num = size - 1;
+    while (num--) {
+      tmp.push(frame.top());
+      frame.pop();
     }
 
-    bool empty(void)
-    {
-      return size == 0;
+    int ret = frame.top();
+
+    while (!tmp.empty()) {
+      frame.push(tmp.top());
+      tmp.pop();
     }
-  private:
-    int size;
-    std::stack<int> frame;
+
+    return ret;
+  }
+
+  bool empty(void) { return size == 0; }
+
+ private:
+  int size;
+  std::stack<int> frame;
 };

@@ -1,17 +1,15 @@
 #include "../config.h"
 
-class Solution
-{
-public:
-  bool isPalindrome(ListNode* head)
-  {
+class Solution {
+ public:
+  bool isPalindrome(ListNode* head) {
     if (!head) {
       return true;
     }
 
     ListNode dummy(0);
     dummy.next = head;
-    ListNode* slow = &dummy, *fast = &dummy;
+    ListNode *slow = &dummy, *fast = &dummy;
 
     while (slow && fast && fast->next) {
       slow = slow->next;
@@ -22,7 +20,7 @@ public:
     fast = &dummy2;
     slow = slow->next;
 
-    ListNode *tmp = nullptr;
+    ListNode* tmp = nullptr;
     while (slow) {
       tmp = slow->next;
       slow->next = fast->next;

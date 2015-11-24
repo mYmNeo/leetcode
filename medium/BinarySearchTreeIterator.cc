@@ -1,54 +1,50 @@
 #include "../config.h"
 
-class BSTIterator
-{
-public:
-    BSTIterator(TreeNode *root)
-    {
-        if (!root) {
-            node = NULL;
-            return;
-        }
-
-        node = root;
-        while (node->left) {
-            parent.push(node);
-            node = node->left;
-        }
+class BSTIterator {
+ public:
+  BSTIterator(TreeNode *root) {
+    if (!root) {
+      node = NULL;
+      return;
     }
 
-    bool hasNext()
-    {
-        if (!node) {
-            return false;
-        }
+    node = root;
+    while (node->left) {
+      parent.push(node);
+      node = node->left;
+    }
+  }
 
-        return true;
+  bool hasNext() {
+    if (!node) {
+      return false;
     }
 
-    int next()
-    {
-        int result = node->val;
+    return true;
+  }
 
-        if (node->right) {
-            node = node->right;
-            while (node->left) {
-                parent.push(node);
-                node = node->left;
-            }
-        } else {
-            if (parent.empty()) {
-                node = NULL;
-            } else {
-                node = parent.top();
-                parent.pop();
-            }
-        }
+  int next() {
+    int result = node->val;
 
-        return result;
+    if (node->right) {
+      node = node->right;
+      while (node->left) {
+        parent.push(node);
+        node = node->left;
+      }
+    } else {
+      if (parent.empty()) {
+        node = NULL;
+      } else {
+        node = parent.top();
+        parent.pop();
+      }
     }
-private:
-    std::stack<TreeNode *> parent;
-    TreeNode *node;
+
+    return result;
+  }
+
+ private:
+  std::stack<TreeNode *> parent;
+  TreeNode *node;
 };
-
