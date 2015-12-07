@@ -1,8 +1,8 @@
 #include "../config.h"
 
 class Solution {
- public:
-  int missingNumber(std::vector<int>& nums) {
+public:
+  int missingNumber(std::vector<int> &nums) {
     for (int i = 0; i < (int)nums.size(); ++i) {
       int pick = nums[i];
       while (nums[pick] != pick) {

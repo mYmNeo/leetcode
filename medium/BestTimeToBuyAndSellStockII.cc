@@ -1,7 +1,7 @@
 #include "config.h"
 
 class Solution {
- public:
+public:
   int maxProfit(std::vector<int> &prices) {
     int profit = 0;
 

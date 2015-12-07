@@ -1,8 +1,8 @@
 #include "../config.h"
 
 class Solution {
- public:
-  void gameOfLife(std::vector<std::vector<int>>& board) {
+public:
+  void gameOfLife(std::vector<std::vector<int>> &board) {
     if (board.empty()) {
       return;
     }
@@ -25,8 +25,8 @@ class Solution {
     }
   }
 
- private:
-  void check(std::vector<std::vector<int>>& board, int i, int j, int a, int b) {
+private:
+  void check(std::vector<std::vector<int>> &board, int i, int j, int a, int b) {
     const int row = board.size();
     const int col = board.front().size();
 

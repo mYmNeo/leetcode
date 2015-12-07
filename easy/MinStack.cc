@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class MinStack {
- public:
+public:
   void push(int x) {
     _data.push(x);
 
@@ -23,7 +23,7 @@ class MinStack {
 
   int getMin() { return _min.top(); }
 
- private:
+private:
   std::stack<int> _data;
   std::stack<int> _min;
 };

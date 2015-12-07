@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int strStr(char *haystack, char *needle) {
     int length_a = std::strlen(haystack);
     int length_b = std::strlen(needle);

@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int totalNQueens(int n) {
     int ret = 0;
 
@@ -9,7 +9,7 @@ class Solution {
       return ret;
     }
 
-    std::vector<std::vector<bool> > valid(n, std::vector<bool>(n, false));
+    std::vector<std::vector<bool>> valid(n, std::vector<bool>(n, false));
 
     for (int j = 0; j < n; ++j) {
       if (!valid[0][j] && check_valid(valid, 0, j, n)) {
@@ -22,8 +22,8 @@ class Solution {
     return ret;
   }
 
- private:
-  void place_a_queen(int &num, std::vector<std::vector<bool> > &chess, int put,
+private:
+  void place_a_queen(int &num, std::vector<std::vector<bool>> &chess, int put,
                      int row) {
     if (put == row) {
       ++num;
@@ -39,7 +39,7 @@ class Solution {
     }
   }
 
-  bool check_valid(std::vector<std::vector<bool> > &chess, const int &row,
+  bool check_valid(std::vector<std::vector<bool>> &chess, const int &row,
                    const int &col, const int &n) {
     for (int i = 0; i < n; ++i) {
       if (chess[i][col]) {

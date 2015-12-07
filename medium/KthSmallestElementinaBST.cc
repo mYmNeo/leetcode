@@ -1,15 +1,15 @@
 #include "../config.h"
 
 class Solution {
- public:
-  int kthSmallest(TreeNode* root, int k) {
+public:
+  int kthSmallest(TreeNode *root, int k) {
     ans = 0;
     (void)helper(root, k);
     return ans;
   }
 
- private:
-  int helper(TreeNode* node, int k) {
+private:
+  int helper(TreeNode *node, int k) {
     if (!node) {
       return 0;
     }
@@ -24,6 +24,6 @@ class Solution {
     return left + right + 1;
   }
 
- private:
+private:
   int ans;
 };

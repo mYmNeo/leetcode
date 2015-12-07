@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   void reverseWords(std::string &s) {
     if (s.length() == 0) {
       return;

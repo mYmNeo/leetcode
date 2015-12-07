@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::string addBinary(std::string &a, std::string &b) {
     std::string result;
     int i, j;

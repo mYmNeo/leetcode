@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::vector<std::string> generateParenthesis(int n) {
     std::vector<std::string> result;
 
@@ -35,6 +35,6 @@ class Solution {
     return memory[n] = result;
   }
 
- private:
-  std::unordered_map<int, std::vector<std::string> > memory;
+private:
+  std::unordered_map<int, std::vector<std::string>> memory;
 };

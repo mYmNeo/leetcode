@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int numTrees(int n) {
     if (n <= 1) {
       return 1;

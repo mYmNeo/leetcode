@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::vector<int> preorderTraversal(TreeNode *root) {
     ret.clear();
 
@@ -16,7 +16,7 @@ class Solution {
     return ret;
   }
 
- private:
+private:
   void preorder_traversal_helper(TreeNode *node) {
     while (node) {
       ret.push_back(node->val);
@@ -27,7 +27,7 @@ class Solution {
     }
   }
 
- private:
+private:
   std::stack<TreeNode *> frame;
   std::vector<int> ret;
 };

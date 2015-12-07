@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   ListNode *reverseBetween(ListNode *head, int m, int n) {
     ListNode pivot(0);
     pivot.next = head;

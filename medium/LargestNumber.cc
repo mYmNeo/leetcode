@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   struct _comp {
     bool operator()(const int &a, const int &b) {
       int ab = a * std::pow(10, get_length(b)) + b;

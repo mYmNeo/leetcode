@@ -1,9 +1,9 @@
 #include "../config.h"
 
 class Solution {
- public:
-  std::vector<std::vector<int> > levelOrder(TreeNode *root) {
-    std::vector<std::vector<int> > ret;
+public:
+  std::vector<std::vector<int>> levelOrder(TreeNode *root) {
+    std::vector<std::vector<int>> ret;
     std::vector<TreeNode *> cur, next;
 
     if (!root) {

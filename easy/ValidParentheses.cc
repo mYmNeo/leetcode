@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   Solution() {
     _lookup['('] = 1;
     _lookup[')'] = 1;
@@ -16,7 +16,7 @@ class Solution {
       return true;
     }
 
-    std::stack<std::pair<char, int> > frame;
+    std::stack<std::pair<char, int>> frame;
     for (int i = 0; i < (int)s.length(); i++) {
       int cur = _lookup[s[i]];
       if (frame.empty()) {
@@ -33,6 +33,6 @@ class Solution {
     return frame.empty();
   }
 
- private:
+private:
   std::map<char, int> _lookup;
 };

@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int compareVersion(std::string version1, std::string version2) {
     std::string::size_type pos1 = 0, pos2 = 0;
     std::string::size_type end1, end2;

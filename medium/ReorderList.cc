@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   void reorderList(ListNode *head) {
     if (!head || !head->next) {
       return;

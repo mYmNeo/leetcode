@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   ListNode *deleteDuplicates(ListNode *head) {
     ListNode *cur = head, *next = head;
     ListNode pivot(0);

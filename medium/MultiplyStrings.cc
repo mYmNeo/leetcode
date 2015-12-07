@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::string multiply(std::string num1, std::string num2) {
     std::string result(num1.length() + num2.length(), '0');
     int carry = 0, digit = 0;

@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int uniquePaths(int m, int n) {
     std::vector<int> dp(n, 0);
     dp[0] = 1;

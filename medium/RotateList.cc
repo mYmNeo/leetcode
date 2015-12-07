@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   ListNode *rotateRight(ListNode *head, int k) {
     if (!head || k == 0) {
       return head;

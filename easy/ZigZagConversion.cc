@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::string convert(std::string s, int rows) {
     std::vector<std::string> data(rows);
     int row = 0;

@@ -1,9 +1,9 @@
 #include "../config.h"
 
 class Solution {
- public:
-  std::vector<std::vector<std::string> > partition(std::string s) {
-    std::vector<std::vector<std::string> > res, tmp;
+public:
+  std::vector<std::vector<std::string>> partition(std::string s) {
+    std::vector<std::vector<std::string>> res, tmp;
     tmp = partition_helper(s);
     for (auto v : tmp) {
       std::reverse(v.begin(), v.end());
@@ -13,9 +13,9 @@ class Solution {
     return res;
   }
 
- private:
-  std::vector<std::vector<std::string> > partition_helper(std::string s) {
-    std::vector<std::vector<std::string> > res, tmp;
+private:
+  std::vector<std::vector<std::string>> partition_helper(std::string s) {
+    std::vector<std::vector<std::string>> res, tmp;
     if (s.size() == 0) {
       return tmp;
     }

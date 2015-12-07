@@ -1,9 +1,9 @@
 #include "../config.h"
 
 class Solution {
- public:
-  std::vector<std::vector<int> > generate(int numRows) {
-    std::vector<std::vector<int> > ret;
+public:
+  std::vector<std::vector<int>> generate(int numRows) {
+    std::vector<std::vector<int>> ret;
     std::vector<int> item;
 
     while (numRows--) {

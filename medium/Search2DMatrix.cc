@@ -1,8 +1,8 @@
 #include "../config.h"
 
 class Solution {
- public:
-  bool searchMatrix(std::vector<std::vector<int> > &matrix, int target) {
+public:
+  bool searchMatrix(std::vector<std::vector<int>> &matrix, int target) {
     if (matrix.size() == 0) {
       return false;
     }
@@ -27,7 +27,7 @@ class Solution {
     return true;
   }
 
- private:
+private:
   int lower_bound(std::vector<int> &index, int target) {
     int start = 0, count = index.size();
 

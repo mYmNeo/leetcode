@@ -1,12 +1,12 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::vector<TreeNode *> generateTrees(int n) {
     return generate_trees_helper(1, n);
   }
 
- private:
+private:
   std::vector<TreeNode *> generate_trees_helper(int s, int e) {
     std::vector<TreeNode *> res;
     if (s > e) {

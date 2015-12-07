@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Stack {
- public:
+public:
   void push(int x) { data.push(x); }
   void pop() {
     int size = data.size() - 1;
@@ -26,6 +26,6 @@ class Stack {
   }
   bool empty() { return data.size() == 0; }
 
- private:
+private:
   std::queue<int> data;
 };

@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   bool isMatch(const char *s, const char *p) {
     const char *eat = nullptr;
     const char *next = nullptr;

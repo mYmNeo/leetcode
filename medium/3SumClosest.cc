@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int threeSumClosest(std::vector<int> &num, int target) {
     std::sort(num.begin(), num.end());
 

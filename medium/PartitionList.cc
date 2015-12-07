@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   ListNode *partition(ListNode *head, int x) {
     ListNode less(0), more(0);
     ListNode *less_ptr = &less, *more_ptr = &more;

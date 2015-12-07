@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   bool wordPattern(std::string pattern, std::string str) {
     std::map<char, std::string> order;
     std::map<std::string, char> inverse;

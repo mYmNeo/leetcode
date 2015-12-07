@@ -1,8 +1,8 @@
 #include "../config.h"
 
 class Solution {
- public:
-  void solve(std::vector<std::vector<char> > &board) {
+public:
+  void solve(std::vector<std::vector<char>> &board) {
     int rows = board.size();
     if (rows == 0) {
       return;
@@ -49,10 +49,10 @@ class Solution {
     }
   }
 
- private:
-  void bfs_replace(std::vector<std::vector<char> > &board,
+private:
+  void bfs_replace(std::vector<std::vector<char>> &board,
                    std::pair<int, int> cur, std::pair<int, int> &end) {
-    std::queue<std::pair<int, int> > next;
+    std::queue<std::pair<int, int>> next;
     int d_x[4] = {-1, 0, 1, 0};
     int d_y[4] = {0, 1, 0, -1};
 

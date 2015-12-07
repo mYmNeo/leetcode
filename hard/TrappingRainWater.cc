@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int trap(int A[], int n) {
     int water = 0;
     int i = 0, j = n - 1;

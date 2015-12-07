@@ -1,8 +1,8 @@
 #include "../config.h"
 
 class Solution {
- public:
-  int uniquePathsWithObstacles(std::vector<std::vector<int> > &obstacleGrid) {
+public:
+  int uniquePathsWithObstacles(std::vector<std::vector<int>> &obstacleGrid) {
     if (obstacleGrid.size() == 0) {
       return 0;
     }

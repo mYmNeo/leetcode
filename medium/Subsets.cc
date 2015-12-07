@@ -1,9 +1,9 @@
 #include "../config.h"
 
 class Solution {
- public:
-  std::vector<std::vector<int> > subsets(std::vector<int> &S) {
-    std::vector<std::vector<int> > ret;
+public:
+  std::vector<std::vector<int>> subsets(std::vector<int> &S) {
+    std::vector<std::vector<int>> ret;
 
     std::sort(S.begin(), S.end());
 
@@ -27,7 +27,7 @@ class Solution {
     return ret;
   }
 
- private:
+private:
   int upper_bound(std::vector<int> &S, int num) {
     int start = 0, end = S.size();
 

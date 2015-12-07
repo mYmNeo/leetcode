@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   bool isBalanced(TreeNode *root) {
     bool flag = true;
 
@@ -10,7 +10,7 @@ class Solution {
     return flag;
   }
 
- private:
+private:
   int is_balanced_helper(TreeNode *node, bool &flag) {
     if (!flag || !node) {
       return 0;

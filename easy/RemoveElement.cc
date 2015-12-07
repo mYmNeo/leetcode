@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int removeElement(int A[], int n, int element) {
     if (n == 0) {
       return 0;

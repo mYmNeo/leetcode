@@ -1,9 +1,9 @@
 #include "../config.h"
 
 class Solution {
- public:
-  std::vector<std::vector<int> > zigzagLevelOrder(TreeNode *root) {
-    std::vector<std::vector<int> > result;
+public:
+  std::vector<std::vector<int>> zigzagLevelOrder(TreeNode *root) {
+    std::vector<std::vector<int>> result;
 
     if (!root) {
       return result;

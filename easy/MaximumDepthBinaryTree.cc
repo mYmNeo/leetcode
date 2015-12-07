@@ -1,14 +1,14 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int maxDepth(TreeNode *root) {
     int depth = 0;
 
     return max_depth_helper(root, depth);
   }
 
- private:
+private:
   int max_depth_helper(TreeNode *node, int depth) {
     if (!node) {
       return depth;

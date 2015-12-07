@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   ListNode *reverseList(ListNode *head) {
     ListNode *prev = nullptr, *cur = nullptr, *next = nullptr;
     if (!head) {

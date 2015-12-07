@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   bool isNumber(std::string s) {
     int i = 0;
 

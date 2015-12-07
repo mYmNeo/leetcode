@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::vector<int> postorderTraversal(TreeNode *root) {
     std::stack<TreeNode *> frame;
     std::vector<int> result;
@@ -23,7 +23,7 @@ class Solution {
     return result;
   }
 
- private:
+private:
   void push_left(TreeNode *node, std::stack<TreeNode *> &frame) {
     while (node) {
       frame.push(node);

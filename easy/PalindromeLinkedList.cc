@@ -1,8 +1,8 @@
 #include "../config.h"
 
 class Solution {
- public:
-  bool isPalindrome(ListNode* head) {
+public:
+  bool isPalindrome(ListNode *head) {
     if (!head) {
       return true;
     }
@@ -20,7 +20,7 @@ class Solution {
     fast = &dummy2;
     slow = slow->next;
 
-    ListNode* tmp = nullptr;
+    ListNode *tmp = nullptr;
     while (slow) {
       tmp = slow->next;
       slow->next = fast->next;

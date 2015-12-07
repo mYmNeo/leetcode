@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int searchInsert(int A[], int n, int target) {
     int start = 0, count = n;
 

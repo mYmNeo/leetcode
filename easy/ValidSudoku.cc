@@ -1,8 +1,8 @@
 #include "../config.h"
 
 class Solution {
- public:
-  bool isValidSudoku(std::vector<std::vector<char> > &board) {
+public:
+  bool isValidSudoku(std::vector<std::vector<char>> &board) {
     int digit[256];
 
     for (int i = 0; i < 9; i++) {

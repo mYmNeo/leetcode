@@ -1,10 +1,10 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int ladderLength(std::string start, std::string end,
                    std::unordered_set<std::string> &dict) {
-    std::queue<std::pair<std::string, int> > next;
+    std::queue<std::pair<std::string, int>> next;
 
     dict.insert(start);
     next.push(std::make_pair(start, 1));

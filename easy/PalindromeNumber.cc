@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   bool isPalindrome(int x) {
     int64_t num = 0;
     int copy = x;

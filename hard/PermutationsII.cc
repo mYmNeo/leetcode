@@ -1,9 +1,9 @@
 #include "../config.h"
 
 class Solution {
- public:
-  std::vector<std::vector<int> > permuteUnique(std::vector<int> &num) {
-    std::vector<std::vector<int> > result;
+public:
+  std::vector<std::vector<int>> permuteUnique(std::vector<int> &num) {
+    std::vector<std::vector<int>> result;
     std::sort(num.begin(), num.end());
 
     while (1) {

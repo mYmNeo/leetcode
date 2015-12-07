@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::string countAndSay(int n) {
     std::string result = "1";
     std::string next;

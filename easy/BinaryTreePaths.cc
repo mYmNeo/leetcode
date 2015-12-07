@@ -1,8 +1,8 @@
 #include "../config.h"
 
 class Solution {
- public:
-  std::vector<std::string> binaryTreePaths(TreeNode* root) {
+public:
+  std::vector<std::string> binaryTreePaths(TreeNode *root) {
     ret.clear();
 
     std::string path;
@@ -10,8 +10,8 @@ class Solution {
     return ret;
   }
 
- private:
-  void helper(TreeNode* node, std::string& path) {
+private:
+  void helper(TreeNode *node, std::string &path) {
     if (!node) {
       return;
     }
@@ -30,6 +30,6 @@ class Solution {
     }
   }
 
- private:
+private:
   std::vector<std::string> ret;
 };

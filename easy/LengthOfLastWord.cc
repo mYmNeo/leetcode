@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int lengthOfLastWord(const char *s) {
     int length = 0;
 

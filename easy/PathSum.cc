@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   bool hasPathSum(TreeNode *root, int sum) {
     if (root == NULL) {
       return false;
@@ -10,7 +10,7 @@ class Solution {
     return path_sum_helper(root, root->val, sum);
   }
 
- private:
+private:
   bool path_sum_helper(TreeNode *node, int cur, int &sum) {
     if (!node->left && !node->right) {
       return cur == sum ? true : false;

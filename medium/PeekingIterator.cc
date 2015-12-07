@@ -3,11 +3,11 @@
 // **DO NOT** modify the interface for Iterator.
 class Iterator {
   struct Data;
-  Data* data;
+  Data *data;
 
- public:
-  Iterator(const std::vector<int>& nums);
-  Iterator(const Iterator& iter);
+public:
+  Iterator(const std::vector<int> &nums);
+  Iterator(const Iterator &iter);
   virtual ~Iterator();
   // Returns the next element in the iteration.
   int next();
@@ -16,8 +16,8 @@ class Iterator {
 };
 
 class PeekingIterator : public Iterator {
- public:
-  PeekingIterator(const std::vector<int>& nums) : Iterator(nums) {
+public:
+  PeekingIterator(const std::vector<int> &nums) : Iterator(nums) {
     // Initialize any member here.
     // **DO NOT** save a copy of nums and manipulate it directly.
     // You should only use the Iterator interface methods.
@@ -45,7 +45,7 @@ class PeekingIterator : public Iterator {
 
   bool hasNext() const { return has_peeked || Iterator::hasNext(); }
 
- private:
+private:
   int peek_element;
   bool has_peeked;
 };

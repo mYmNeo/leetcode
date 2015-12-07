@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int reverse(int x) {
     int64_t num = 0;
     bool negative = x > 0 ? false : true;

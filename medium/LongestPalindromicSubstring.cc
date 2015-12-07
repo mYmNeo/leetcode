@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::string longestPalindrome(std::string s) {
     std::string new_str = append(s);
     std::vector<int> p_length(new_str.length());
@@ -36,7 +36,7 @@ class Solution {
     return s.substr((center - 1 - max_length) >> 1, max_length);
   }
 
- private:
+private:
   std::string append(std::string s) {
     if (s.length() == 0) {
       return "^$";

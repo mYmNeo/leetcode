@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   double pow(double x, int n) {
     double result = 1.0;
     uint32_t count = n;

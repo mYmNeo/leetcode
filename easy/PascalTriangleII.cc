@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::vector<int> getRow(int rowIndex) {
     std::vector<int> ret[2];
     int cur = 0, next = 1;

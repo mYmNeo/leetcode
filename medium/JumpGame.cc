@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   bool canJump(int A[], int n) {
     int max_reach = 0;
 

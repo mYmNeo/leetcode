@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int maxArea(std::vector<int> &height) {
     int result = 0;
 

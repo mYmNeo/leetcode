@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::vector<int> plusOne(std::vector<int> &digits) {
     std::vector<int> result;
     int num;

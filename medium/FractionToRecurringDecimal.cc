@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::string fractionToDecimal(int numberator, int denominator) {
     if (numberator == 0) {
       return "0";

@@ -1,9 +1,9 @@
 #include "../config.h"
 
 class Solution {
- public:
-  std::vector<std::vector<int> > generateMatrix(int n) {
-    std::vector<std::vector<int> > result(n, std::vector<int>(n));
+public:
+  std::vector<std::vector<int>> generateMatrix(int n) {
+    std::vector<std::vector<int>> result(n, std::vector<int>(n));
     int row = 0, col = 0;
     int num = 0;
     int loop = 0;

@@ -1,8 +1,8 @@
 #include "../config.h"
 
 class Solution {
- public:
-  std::vector<int> productExceptSelf(std::vector<int>& nums) {
+public:
+  std::vector<int> productExceptSelf(std::vector<int> &nums) {
     std::vector<int> result(nums.size(), 1);
 
     int product = 1;

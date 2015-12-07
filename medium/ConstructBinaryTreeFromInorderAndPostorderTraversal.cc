@@ -1,12 +1,12 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   TreeNode *buildTree(std::vector<int> &inorder, std::vector<int> &postorder) {
     return build_tree_helper(inorder, 0, inorder.size(), postorder);
   }
 
- private:
+private:
   TreeNode *build_tree_helper(std::vector<int> &inorder, int si, int ei,
                               std::vector<int> &postorder) {
     if (ei == si) {

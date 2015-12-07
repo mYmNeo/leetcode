@@ -1,8 +1,8 @@
 #include "../config.h"
 
 class Solution {
- public:
-  bool containsNearbyAlmostDuplicate(std::vector<int>& nums, int k, int t) {
+public:
+  bool containsNearbyAlmostDuplicate(std::vector<int> &nums, int k, int t) {
     std::set<int64_t> window;
 
     for (int i = 0; i < (int)nums.size(); ++i) {

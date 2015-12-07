@@ -1,8 +1,8 @@
 #include "../config.h"
 
 class Solution {
- public:
-  std::vector<std::string> summaryRanges(std::vector<int>& nums) {
+public:
+  std::vector<std::string> summaryRanges(std::vector<int> &nums) {
     if (!nums.size()) {
       return {};
     }

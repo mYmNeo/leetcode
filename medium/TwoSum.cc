@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::vector<int> twoSum(std::vector<int> &numbers, int target) {
     std::unordered_map<int, int> lookup;
     std::vector<int> result;

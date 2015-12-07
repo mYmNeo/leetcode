@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   void nextPermutation(std::vector<int> &num) {
     int change;
 

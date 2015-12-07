@@ -1,8 +1,8 @@
 #include "../config.h"
 
 class Solution {
- public:
-  void setZeroes(std::vector<std::vector<int> > &matrix) {
+public:
+  void setZeroes(std::vector<std::vector<int>> &matrix) {
     bool col0 = false;
     for (int i = 0; i < (int)matrix.size(); ++i) {
       if (matrix[i][0] == 0) {

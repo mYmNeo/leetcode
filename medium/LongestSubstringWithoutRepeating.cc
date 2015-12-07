@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int lengthOfLongestSubstring(std::string s) {
     if (s.length() <= 1) {
       return s.length();

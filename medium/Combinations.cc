@@ -1,9 +1,9 @@
 #include "../config.h"
 
 class Solution {
- public:
-  std::vector<std::vector<int> > combine(int n, int k) {
-    std::vector<std::vector<int> > result, next;
+public:
+  std::vector<std::vector<int>> combine(int n, int k) {
+    std::vector<std::vector<int>> result, next;
 
     if (n == 0) {
       return result;

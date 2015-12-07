@@ -1,8 +1,8 @@
 #include "../config.h"
 
 class Solution {
- public:
-  TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+public:
+  TreeNode *lowestCommonAncestor(TreeNode *root, TreeNode *p, TreeNode *q) {
     if (!root || !p || !q) {
       return NULL;
     }
@@ -11,8 +11,8 @@ class Solution {
       return root;
     }
 
-    TreeNode* l = lowestCommonAncestor(root->left, p, q);
-    TreeNode* r = lowestCommonAncestor(root->right, p, q);
+    TreeNode *l = lowestCommonAncestor(root->left, p, q);
+    TreeNode *r = lowestCommonAncestor(root->right, p, q);
 
     if (l && r) {
       return root;

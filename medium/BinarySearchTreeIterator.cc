@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class BSTIterator {
- public:
+public:
   BSTIterator(TreeNode *root) {
     if (!root) {
       node = NULL;
@@ -44,7 +44,7 @@ class BSTIterator {
     return result;
   }
 
- private:
+private:
   std::stack<TreeNode *> parent;
   TreeNode *node;
 };

@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int climbStairs(int n) {
     std::vector<int> dp(n + 1, 0);
 

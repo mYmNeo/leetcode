@@ -3,9 +3,9 @@
 #define PROTOTYPE 1
 
 class Solution {
- public:
+public:
 #if PROTOTYPE
-  void solveSudoku(std::vector<std::vector<char> > &board)
+  void solveSudoku(std::vector<std::vector<char>> &board)
 #else
   void solveSudoku(std::vector<std::string> &board)
 #endif
@@ -13,9 +13,9 @@ class Solution {
     solve_helper(board, 0);
   }
 
- private:
+private:
 #if PROTOTYPE
-  bool solve_helper(std::vector<std::vector<char> > &board, int left)
+  bool solve_helper(std::vector<std::vector<char>> &board, int left)
 #else
   bool solve_helper(std::vector<std::string> &board, int pos)
 #endif
@@ -47,7 +47,7 @@ class Solution {
   }
 
 #if PROTOTYPE
-  bool is_row_valid(std::vector<std::vector<char> > &board, int row, char c)
+  bool is_row_valid(std::vector<std::vector<char>> &board, int row, char c)
 #else
   bool is_row_valid(std::vector<std::string> &board, int row, char c)
 #endif
@@ -62,7 +62,7 @@ class Solution {
   }
 
 #if PROTOTYPE
-  bool is_col_valid(std::vector<std::vector<char> > &board, int col, char c)
+  bool is_col_valid(std::vector<std::vector<char>> &board, int col, char c)
 #else
   bool is_col_valid(std::vector<std::string> &board, int col, char c)
 #endif
@@ -77,7 +77,7 @@ class Solution {
   }
 
 #if PROTOTYPE
-  bool is_rect_valid(std::vector<std::vector<char> > &board, int row, int col,
+  bool is_rect_valid(std::vector<std::vector<char>> &board, int row, int col,
                      char c)
 #else
   bool is_rect_valid(std::vector<std::string> &board, int row, int col, char c)

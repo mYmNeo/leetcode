@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
     int lenA = 0;
     int lenB = 0;

@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int canCompleteCircuit(std::vector<int> &gas, std::vector<int> &cost) {
     int left = 0;
     int start = 0;

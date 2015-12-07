@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int atoi(const char *str) {
     int64_t num = 0;
     bool negative = false;
@@ -48,6 +48,6 @@ class Solution {
     return num;
   }
 
- private:
+private:
   inline bool is_number(char c) { return c >= '0' && c <= '9' ? true : false; }
 };

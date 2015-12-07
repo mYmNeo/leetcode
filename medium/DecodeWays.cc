@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int numDecodings(std::string s) {
     if (s.length() == 0) {
       return 0;
@@ -19,7 +19,7 @@ class Solution {
     return dp.back();
   }
 
- private:
+private:
   std::pair<bool, bool> is_valid(char prev, char next) {
     std::pair<bool, bool> ret(false, false);
 

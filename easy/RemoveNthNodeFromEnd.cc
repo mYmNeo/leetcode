@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   ListNode *removeNthFromEnd(ListNode *head, int n) {
     ListNode pivot(0);
 

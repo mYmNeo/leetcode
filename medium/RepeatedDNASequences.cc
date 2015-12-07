@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::vector<std::string> findRepeatedDnaSequences(std::string s) {
     std::vector<std::string> result;
 

@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int findPeakElement(const std::vector<int> &num) {
     int size = num.size();
     int start = 0;

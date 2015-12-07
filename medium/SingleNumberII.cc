@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int singleNumber(int A[], int n) {
     int once = 0, twice = 0, reset = 0;
 

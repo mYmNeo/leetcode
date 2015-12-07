@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   TreeNode *sortedListToBST(ListNode *head) {
     if (!head) {
       return NULL;
@@ -17,7 +17,7 @@ class Solution {
     return sorted_list_to_bst_helper(head, num);
   }
 
- private:
+private:
   TreeNode *sorted_list_to_bst_helper(ListNode *head, int num) {
     if (num == 0) {
       return NULL;

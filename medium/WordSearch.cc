@@ -1,13 +1,13 @@
 #include "../config.h"
 
 class Solution {
- public:
-  bool exist(std::vector<std::vector<char> > &board, std::string word) {
+public:
+  bool exist(std::vector<std::vector<char>> &board, std::string word) {
     if (board.size() == 0 || word.length() == 0) {
       return false;
     }
 
-    std::vector<std::vector<bool> > visit(
+    std::vector<std::vector<bool>> visit(
         board.size(), std::vector<bool>(board.front().size(), false));
     bool ret = false;
     for (int i = 0; i < (int)board.size(); ++i) {
@@ -26,9 +26,9 @@ class Solution {
     return false;
   }
 
- private:
-  bool exist_helper(std::vector<std::vector<char> > &board, std::string &word,
-                    std::vector<std::vector<bool> > &visit, int x, int y,
+private:
+  bool exist_helper(std::vector<std::vector<char>> &board, std::string &word,
+                    std::vector<std::vector<bool>> &visit, int x, int y,
                     int pos) {
     if (pos == (int)word.length()) {
       return true;

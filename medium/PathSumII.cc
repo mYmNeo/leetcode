@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- private:
+private:
   struct param_t {
     int sum;
     TreeNode *node;
@@ -12,9 +12,9 @@ class Solution {
     param_t(int s, TreeNode *n) : sum(s), node(n) {}
   };
 
- public:
-  std::vector<std::vector<int> > pathSum(TreeNode *root, int sum) {
-    std::vector<std::vector<int> > result;
+public:
+  std::vector<std::vector<int>> pathSum(TreeNode *root, int sum) {
+    std::vector<std::vector<int>> result;
 
     if (!root) {
       return result;

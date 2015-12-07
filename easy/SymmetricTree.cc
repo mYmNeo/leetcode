@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   bool isSymmetric(TreeNode *root) {
     if (!root) {
       return true;
@@ -10,7 +10,7 @@ class Solution {
     return is_symmetric_helper(root->left, root->right);
   }
 
- private:
+private:
   bool is_symmetric_helper(TreeNode *left, TreeNode *right) {
     if (!left && !right) {
       return true;

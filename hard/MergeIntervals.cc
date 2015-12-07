@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::vector<Interval> merge(std::vector<Interval> &intervals) {
     std::vector<Interval> result;
 

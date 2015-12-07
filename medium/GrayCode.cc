@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::vector<int> grayCode(int n) {
     std::vector<int> result;
     std::vector<int> next;

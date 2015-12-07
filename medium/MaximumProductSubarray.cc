@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int maxProduct(int A[], int n) {
     int result = A[0];
     int max = A[0], min = A[0];

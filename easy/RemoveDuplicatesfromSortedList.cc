@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   ListNode *deleteDuplicates(ListNode *head) {
     if (!head || !head->next) {
       return head;

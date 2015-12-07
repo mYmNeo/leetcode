@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int minDepth(TreeNode *root) {
     if (!root) {
       return 0;
@@ -10,7 +10,7 @@ class Solution {
     return min_depth_helper(root, 1);
   }
 
- private:
+private:
   int min_depth_helper(TreeNode *node, int cur) {
     if (!node->left && !node->right) {
       return cur;

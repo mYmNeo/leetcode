@@ -1,8 +1,8 @@
 #include "../config.h"
 
 class Solution {
- public:
-  std::vector<std::vector<std::string> > solveNQueens(int n) {
+public:
+  std::vector<std::vector<std::string>> solveNQueens(int n) {
     ret.clear();
     if (n == 0) {
       return ret;
@@ -21,7 +21,7 @@ class Solution {
     return ret;
   }
 
- private:
+private:
   void place_a_queen(std::vector<std::string> &chess, const int &n,
                      const int put) {
     if (put == n) {
@@ -79,6 +79,6 @@ class Solution {
     return true;
   }
 
- private:
-  std::vector<std::vector<std::string> > ret;
+private:
+  std::vector<std::vector<std::string>> ret;
 };

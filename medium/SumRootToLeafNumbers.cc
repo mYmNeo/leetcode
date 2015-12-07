@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int sumNumbers(TreeNode *root) {
     int result = 0;
 
@@ -14,7 +14,7 @@ class Solution {
     return result;
   }
 
- private:
+private:
   void sum_number_helper(TreeNode *node, int cur, int &result) {
     cur *= 10;
     cur += node->val;

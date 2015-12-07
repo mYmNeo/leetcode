@@ -1,9 +1,9 @@
 #include "../config.h"
 
 class Solution {
- public:
-  std::vector<std::vector<int> > combinationSum(std::vector<int> &candidates,
-                                                int target) {
+public:
+  std::vector<std::vector<int>> combinationSum(std::vector<int> &candidates,
+                                               int target) {
     res.clear();
     result.clear();
     std::sort(candidates.begin(), candidates.end());
@@ -17,7 +17,7 @@ class Solution {
     return result;
   }
 
- private:
+private:
   void combination_sum_helper(std::vector<int> &candidates,
                               std::vector<int> &save, int target) {
     if (0 == target) {
@@ -38,7 +38,7 @@ class Solution {
     }
   }
 
- private:
-  std::vector<std::vector<int> > result;
-  std::set<std::vector<int> > res;
+private:
+  std::vector<std::vector<int>> result;
+  std::set<std::vector<int>> res;
 };

@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int findMin(std::vector<int> &num) {
     if (num.size() == 0) {
       return 0;

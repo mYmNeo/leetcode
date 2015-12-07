@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::vector<std::string> restoreIpAddresses(std::string s) {
     std::vector<std::string> ret;
     std::vector<std::string> test, next;

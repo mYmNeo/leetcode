@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int titleToNumber(std::string s) {
     int pos = 0;
     int num = 0;

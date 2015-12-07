@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   void merge(int A[], int m, int B[], int n) {
     int pos_a = n;
     int pos_b = 0;

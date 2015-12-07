@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::string simplifyPath(std::string path) {
     std::deque<std::string> frame;
 
@@ -14,28 +14,28 @@ class Solution {
 
         std::string sub_path = path.substr(i, end - i);
         switch (sub_path.length()) {
-          case 0:
-          case 1: {
-            break;
-          }
-          case 2: {
-            if (sub_path.back() != '.') {
-              frame.push_back(sub_path);
-            }
-            break;
-          }
-          case 3: {
-            if (sub_path.back() != '.') {
-              frame.push_back(sub_path);
-            } else if (!frame.empty()) {
-              frame.pop_back();
-            }
-            break;
-          }
-          default: {
+        case 0:
+        case 1: {
+          break;
+        }
+        case 2: {
+          if (sub_path.back() != '.') {
             frame.push_back(sub_path);
-            break;
           }
+          break;
+        }
+        case 3: {
+          if (sub_path.back() != '.') {
+            frame.push_back(sub_path);
+          } else if (!frame.empty()) {
+            frame.pop_back();
+          }
+          break;
+        }
+        default: {
+          frame.push_back(sub_path);
+          break;
+        }
         }
       }
     }

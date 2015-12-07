@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int removeDuplicates(int A[], int n) {
     int length = 0;
 

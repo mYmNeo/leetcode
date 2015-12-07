@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   ListNode *sortList(ListNode *head) {
     if (!head) {
       return NULL;
@@ -17,7 +17,7 @@ class Solution {
     return merge_sort(head, length);
   }
 
- private:
+private:
   ListNode *merge_sort(ListNode *head, int length) {
     ListNode pivot(0);
     pivot.next = head;

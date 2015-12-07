@@ -3,7 +3,7 @@
 bool isBadVersion(int version);
 
 class Solution {
- public:
+public:
   int firstBadVersion(int n) {
     int first = 0;
     int test = 0;

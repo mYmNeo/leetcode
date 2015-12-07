@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int sqrt(int x) {
     int start = 0, count = x;
     while (count) {

@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::string getPermutation(int n, int k) {
     int num[10];
     int permu_count = 1;

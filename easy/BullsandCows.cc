@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::string getHint(std::string secret, std::string guess) {
     int bull = 0, cow = 0;
     int num[10] = {0};

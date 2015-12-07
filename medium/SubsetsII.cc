@@ -1,9 +1,9 @@
 #include "../config.h"
 
 class Solution {
- public:
-  std::vector<std::vector<int> > subsetsWithDup(std::vector<int> &S) {
-    std::vector<std::pair<std::vector<int>, int> > ret;
+public:
+  std::vector<std::vector<int>> subsetsWithDup(std::vector<int> &S) {
+    std::vector<std::pair<std::vector<int>, int>> ret;
 
     std::sort(S.begin(), S.end());
 
@@ -33,7 +33,7 @@ class Solution {
       }
     }
 
-    std::vector<std::vector<int> > final_ret;
+    std::vector<std::vector<int>> final_ret;
 
     std::for_each(ret.begin(), ret.end(),
                   [&](std::pair<std::vector<int>, int> &it) {
@@ -43,7 +43,7 @@ class Solution {
     return final_ret;
   }
 
- private:
+private:
   int upper_bound(std::vector<int> &S, int begin, int num) {
     int start = begin, end = S.size() - 1;
 

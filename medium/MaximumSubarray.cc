@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int maxSubArray(int A[], int n) {
     std::vector<int> dp(n);
     dp[0] = A[0];

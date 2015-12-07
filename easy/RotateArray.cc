@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   void rotate(int nums[], int n, int k) {
     if (n == 0) {
       return;

@@ -1,8 +1,8 @@
 #include "../config.h"
 
 class Solution {
- public:
-  int rob(std::vector<int>& nums) {
+public:
+  int rob(std::vector<int> &nums) {
     int size = nums.size();
 
     if (size == 0) {

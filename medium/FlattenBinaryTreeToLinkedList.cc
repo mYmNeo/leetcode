@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   void flatten(TreeNode *root) {
     if (!root) {
       return;

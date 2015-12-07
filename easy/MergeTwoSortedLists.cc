@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
     ListNode pivot(0);
     ListNode *cur = &pivot;

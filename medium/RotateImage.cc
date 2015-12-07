@@ -1,8 +1,8 @@
 #include "../config.h"
 
 class Solution {
- public:
-  void rotate(std::vector<std::vector<int> > &matrix) {
+public:
+  void rotate(std::vector<std::vector<int>> &matrix) {
     int n = matrix.size();
 
     if (n == 0 || n == 1) {

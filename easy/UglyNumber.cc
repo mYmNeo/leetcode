@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   bool isUgly(int num) {
     if (num < 0) {
       return false;

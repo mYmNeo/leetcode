@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::string longestCommonPrefix(std::vector<std::string> &str) {
     if (str.size() == 0) {
       return "";

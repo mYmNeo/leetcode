@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Queue {
- public:
+public:
   Queue() { size = 0; }
   void push(int x) {
     ++size;
@@ -43,7 +43,7 @@ class Queue {
 
   bool empty(void) { return size == 0; }
 
- private:
+private:
   int size;
   std::stack<int> frame;
 };

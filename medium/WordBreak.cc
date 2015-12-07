@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   bool wordBreak(std::string s, std::unordered_set<std::string> &dict) {
     std::vector<bool> dp(s.length() + 1, false);
 

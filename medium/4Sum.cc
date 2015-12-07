@@ -1,14 +1,13 @@
 #include "../config.h"
 
 class Solution {
- public:
-  std::vector<std::vector<int> > fourSum(std::vector<int> &num, int target) {
-    std::vector<std::vector<int> > result;
+public:
+  std::vector<std::vector<int>> fourSum(std::vector<int> &num, int target) {
+    std::vector<std::vector<int>> result;
 
     std::sort(num.begin(), num.end());
     for (int i = 0; i < (int)num.size(); ++i) {
-      std::vector<std::vector<int> > ret =
-          threeSum(num, i + 1, target - num[i]);
+      std::vector<std::vector<int>> ret = threeSum(num, i + 1, target - num[i]);
       for (std::vector<int> &item : ret) {
         item.insert(item.begin(), num[i]);
         result.push_back(item);
@@ -22,10 +21,10 @@ class Solution {
     return result;
   }
 
- private:
-  std::vector<std::vector<int> > threeSum(std::vector<int> &num, int start,
-                                          int target) {
-    std::vector<std::vector<int> > result;
+private:
+  std::vector<std::vector<int>> threeSum(std::vector<int> &num, int start,
+                                         int target) {
+    std::vector<std::vector<int>> result;
 
     if (num.size() - start <= 0) {
       return result;

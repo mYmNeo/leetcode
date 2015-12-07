@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int divide(int dividend, int divisor) {
     if (divisor == 0) {
       return INT_MAX;

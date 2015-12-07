@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   bool isPalindrome(std::string s) {
     int f, e;
     if (s.length() == 0) {

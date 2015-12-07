@@ -1,12 +1,12 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   TreeNode *sortedArrayToBST(std::vector<int> &num) {
     return sorted_array_to_bst_helper(num, 0, num.size());
   }
 
- private:
+private:
   TreeNode *sorted_array_to_bst_helper(std::vector<int> &num, int start,
                                        int size) {
     if (size == 0) {

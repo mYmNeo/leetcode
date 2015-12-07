@@ -1,8 +1,8 @@
 #include "../config.h"
 
 class Solution {
- public:
-  std::vector<int> spiralOrder(std::vector<std::vector<int> > &matrix) {
+public:
+  std::vector<int> spiralOrder(std::vector<std::vector<int>> &matrix) {
     std::vector<int> result;
     int m = matrix.size();
 

@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class NumArray {
- public:
+public:
   NumArray(std::vector<int> &nums) {
     dp.clear();
     dp.push_back(0);
@@ -12,6 +12,6 @@ class NumArray {
 
   int sumRange(int i, int j) { return dp[j + 1] - dp[i]; }
 
- private:
+private:
   std::vector<int> dp;
 };

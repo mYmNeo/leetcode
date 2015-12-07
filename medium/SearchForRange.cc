@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::vector<int> searchRange(int A[], int n, int target) {
     std::vector<int> ret;
 
@@ -15,7 +15,7 @@ class Solution {
     return ret;
   }
 
- private:
+private:
   int lower_bound(int A[], int start, int end, int target) {
     while (start < end) {
       int mid = (start + end) >> 1;

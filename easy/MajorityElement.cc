@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int majorityElement(std::vector<int> &num) {
     int last, count;
 

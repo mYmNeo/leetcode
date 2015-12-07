@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   UndirectedGraphNode *cloneGraph(UndirectedGraphNode *node) {
     std::unordered_map<UndirectedGraphNode *, UndirectedGraphNode *> data;
     std::queue<UndirectedGraphNode *> next;

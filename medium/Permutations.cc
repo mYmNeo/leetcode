@@ -1,9 +1,9 @@
 #include "../config.h"
 
 class Solution {
- public:
-  std::vector<std::vector<int> > permute(std::vector<int> &num) {
-    std::vector<std::vector<int> > result;
+public:
+  std::vector<std::vector<int>> permute(std::vector<int> &num) {
+    std::vector<std::vector<int>> result;
 
     if (num.size() == 0) {
       return result;

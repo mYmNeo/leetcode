@@ -1,8 +1,8 @@
 #include "../config.h"
 
 class Solution {
- public:
-  int minimumTotal(std::vector<std::vector<int> > &triangle) {
+public:
+  int minimumTotal(std::vector<std::vector<int>> &triangle) {
     if (triangle.size() == 0) {
       return 0;
     }

@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   Solution() {
     _lookup[0] = "";
     _lookup[1] = "";
@@ -44,6 +44,6 @@ class Solution {
     return result;
   }
 
- private:
+private:
   std::map<int, std::string> _lookup;
 };

@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   bool isHappy(int n) {
     std::set<int64_t> record;
     int64_t num = n;

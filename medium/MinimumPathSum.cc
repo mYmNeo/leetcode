@@ -1,8 +1,8 @@
 #include "../config.h"
 
 class Solution {
- public:
-  int minPathSum(std::vector<std::vector<int> > &grid) {
+public:
+  int minPathSum(std::vector<std::vector<int>> &grid) {
     if (grid.size() == 0) {
       return 0;
     }

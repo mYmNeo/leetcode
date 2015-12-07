@@ -1,8 +1,8 @@
 #include "../config.h"
 
 class Solution {
- public:
-  bool containsNearbyDuplicate(std::vector<int>& nums, int k) {
+public:
+  bool containsNearbyDuplicate(std::vector<int> &nums, int k) {
     std::map<int, int> count;
 
     for (int i = 0; i < (int)nums.size(); ++i) {

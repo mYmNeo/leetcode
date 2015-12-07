@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   std::vector<Interval> insert(std::vector<Interval> &intervals,
                                Interval newInterval) {
     intervals.push_back(newInterval);

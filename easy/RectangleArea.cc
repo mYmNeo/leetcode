@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int computeArea(int A, int B, int C, int D, int E, int F, int G, int H) {
     int size =
         std::abs(D - B) * std::abs(A - C) + std::abs(G - E) * std::abs(H - F);

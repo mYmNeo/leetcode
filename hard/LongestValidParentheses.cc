@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int longestValidParentheses(std::string s) {
     std::vector<int> dp(s.length() + 1, 0);
 

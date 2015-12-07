@@ -1,7 +1,7 @@
 #include "../config.h"
 
 class Solution {
- public:
+public:
   int search(int A[], int n, int target) {
     int l = 0, r = n - 1;
 
