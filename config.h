@@ -15,6 +15,10 @@
 #include <utility>
 #include <sstream>
 
+#ifndef CONFIG_H
+#define CONFIG_H
+#endif
+
 using namespace std;
 
 struct ListNode {

@@ -1,9 +1,12 @@
-// Place your settings in this file to overwrite default and user settings.
+// Place your settings in this file to overwrite the default settings
 {
-    "clang-format.formatOnSave": true,
+    "clang.executable": "clang++",
+    "editor.wrappingColumn": 80,
     "clang-format.style": "Google",
+    "clang-format.formatOnSave": true,
     "clang.cxxflags": [
-        "-std=c++11"
+        "-std=c++11",
+        "-DCONFIG_H"
     ],
-    "editor.tabSize": 2
+    "editor.formatOnType": true
 }
