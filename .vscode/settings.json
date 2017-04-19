@@ -1,12 +1,15 @@
 // Place your settings in this file to overwrite the default settings
 {
     "clang.executable": "clang++",
-    "editor.wrappingColumn": 80,
+    "editor.wordWrapColumn": 80,
     "clang-format.style": "Google",
     "clang-format.formatOnSave": true,
     "clang.cxxflags": [
         "-std=c++11",
         "-DCONFIG_H"
     ],
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "files.associations": {
+        "hashtable": "cpp"
+    }
 }
